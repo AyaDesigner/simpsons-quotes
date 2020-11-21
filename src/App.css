@@ -1,11 +1,39 @@
 .App {
   text-align: center;
+  display:flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
+.quote-button  {
+  margin: o auto;
+  padding-top: 5vh;
+  position: static;
+  
+  }
+
+
+  .quote-button button {
+    background-color: #ffd90f; /* Green */
+    border: none;
+    color: rgb(41, 35, 35);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    outline: none;
+  }
+
+  .quote-button button:active { 
+    transform: scale(0.98); 
+    /* Scaling button to 0.98 to its original size */ 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+    /* Lowering the shadow */ 
+} 
+  
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,20 +41,9 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+
+
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +53,4 @@
     transform: rotate(360deg);
   }
 }
+
